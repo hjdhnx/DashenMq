@@ -208,6 +208,7 @@ def btn_savesettings():
     showinfo("提示","保存成功!数据为:\n{}".format(json))
 
 def btn_send():
+    w.Button_publish.configure(state="disabled")#发送按下，按钮变灰，处理后变灰正常
     sendtopic =w.TCombobox_sentopic.get()
     sendqos = int(w.TCombobox_senqos.get())
     sendtype = w.TCombobox_sendtype.get()
@@ -217,11 +218,13 @@ def btn_send():
         if content.replace("\t","") != "":
             print(sendtopic,sendqos,sendtype)
             on_publish(sendtopic, content, sendqos)
+            w.Button_publish.configure(state="normal")
     else:
         print(sendfile)
         on_publish(sendtopic, sendfile, sendqos)
         sendfile=""
         w.Text_sendmsg.delete(1.0, tk.END)
+        w.Button_publish.configure(state="normal")
 
 def btn_sendback():
     index = w.Text_sendmsg.index("insert")
