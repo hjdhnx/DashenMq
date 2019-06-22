@@ -24,3 +24,8 @@
 
 安装完毕后运行support文件即可打开整个界面程序。
 程序初始化会释放一下资源到res/目录下，几秒钟，请耐心等待
+
+
+cd /d d:
+cd D:\EMQ\emqtt\bin
+emqx start
