@@ -23,8 +23,7 @@ def pipsetup(packname):
 
 
 if __name__ == '__main__':
-    # pipsetup("pydub")
-    # pipsetup("baidu-aip")
-    # pipsetup("pyaudio")
-    pipsetup("cython")
+    pipsetup("pydub")
+    pipsetup("baidu-aip")
+    pipsetup("pyaudio")
 

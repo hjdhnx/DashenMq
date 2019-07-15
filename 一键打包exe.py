@@ -132,4 +132,5 @@ def package(
 
 if __name__ == '__main__':
     packageres()
-    package("dashenMQ_new.py", "dashenMQTT", console=False)
+    package("dashenMQ_new.py", "dashenMQ_new", console=False)
+    # package("hell.py", "hell", console=True)

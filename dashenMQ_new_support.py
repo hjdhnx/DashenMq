@@ -57,7 +57,7 @@ def set_Tk_var():
     global combobox_mqport
     combobox_mqport = tk.StringVar(value=1883)
     global combobox_mqip
-    combobox_mqip = tk.StringVar(value="47.93.30.53")
+    combobox_mqip = tk.StringVar(value="118.25.210.158")
     global combobox_username
     combobox_username = tk.StringVar(value="dashen")
     global combobox_pwd
