@@ -131,6 +131,7 @@ def package(
 
 
 if __name__ == '__main__':
-    packageres()
+    packageres() #资源初始化
+    #下面开始打包，第一个参数为page界面文件全名，第二个参数为打包后生成的exe名，第三个为是否打包带控制台黑窗口
     package("dashenMQ_new.py", "dashenMQ_new", console=False)
     # package("hell.py", "hell", console=True)
